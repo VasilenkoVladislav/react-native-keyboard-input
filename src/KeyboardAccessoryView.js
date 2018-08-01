@@ -119,6 +119,12 @@ export default class KeyboardAccessoryView extends Component {
     return {};
   }
 
+  init() {
+      if (this.trackingViewRef) {
+          this.trackingViewRef.init();
+      }
+  }
+
   scrollToStart() {
     if (this.trackingViewRef) {
       this.trackingViewRef.scrollToStart();
